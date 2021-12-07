@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <div class="card">
+    <h2>{{title}}</h2>
+    <p>{{text}}</p>
+
+    <input type="text" #nameInput (input)="inputHandler(nameInput.value)"><button (click)="cleanName()">ЗНИЩИТИ</button>
+    <br>
+    <label>{{name}}</label>
+    <br>
+
+<!--    <strong>Number: {{number}}</strong><br>-->
+<!--    <em>{{array}}</em>-->
+<!--    <pre>{{obj | json}}</pre>-->
+<!--    <p>{{getInfo()}}</p>-->
+<!--    <button [disabled] = "disabled">Enable</button>-->
+    <div>
+      <img [src]="imageUrl">
+    </div>
+
+
+  </div>
+
+</body>
+</html>
